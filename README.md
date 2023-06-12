@@ -21,3 +21,6 @@ vision zero data- crashes, heat map of crashes?,
 
 
 maybe bike lanes?
+
+
+https://www.bluebikes.com/blog/the-data-challenge-entries
