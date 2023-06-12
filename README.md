@@ -29,3 +29,31 @@ https://www.bluebikes.com/blog/the-data-challenge-entries
 BlueBlue Projects:
 https://storymaps.arcgis.com/stories/0f5fc6ed107d4c0491d24051eed77ff9
 https://data.boston.gov/dataset/vision-zero-crash-records
+
+
+CODE FROM CLASS:
+# Plot a map of boston
+
+import geopandas as gpd
+import contextily as ctx
+
+bos = gpd.read_file("boston.geojson")
+bos = bos.to_crs(epsg=3857)
+ax = bos.plot(figsize=(10, 10), alpha=0.15, edgecolor='k')
+ctx.add_basemap(ax)
+
+
+# Other Boston Attributes
+#trees = gpd.read_file("trees.shp").to_crs(epsg=3857)
+hosp = gpd.read_file("hospitals.geojson").to_crs(epsg=3857)
+coll = gpd.read_file("colleges.geojson").to_crs(epsg=3857)
+wifi = gpd.read_file("wifi.geojson").to_crs(epsg=3857)
+bikes = gpd.read_file("bikes.geojson").to_crs(epsg=3857)
+#sts = gpd.read_file("/Users/rachlin/Downloads/streets.geojson").to_crs(epsg=3857)
+
+#trees.plot(color='green', markersize=1, ax=ax)
+hosp.plot(color='pink', markersize=10, ax=ax)
+coll.plot(color='purple', markersize=10, ax=ax)
+wifi.plot(color='white', markersize=10, ax=ax)
+bikes.plot(color='green', markersize=1, ax=ax)
+#sts.plot(color='green', markersize=1, ax=ax)
