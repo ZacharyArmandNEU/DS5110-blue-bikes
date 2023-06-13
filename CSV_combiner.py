@@ -25,19 +25,27 @@ def create_year_df(year, filelocation):
             year_df.append(pd.read_csv((filelocation + str(each))))
     # concat all into one dataframe
     df_temp = pd.concat(year_df, axis=0, ignore_index=True)
-    # drop columns as needed - birth year and gender
+    # drop columns as needed - birth year and gender, and then postal code (from different data sets)
     try:
         df_temp.drop(['birth year', 'gender'], axis=1, inplace=True)
     except KeyError:
         pass
+    try:
+        df_temp.drop(['postal code'], axis=1, inplace=True)
+    except KeyError:
+        pass
+    
+    # sort by date
+    df_temp.sort_values('starttime', inplace=True)
+    
     return df_temp
 
 
 def main():
 
     # update file location to where all Bluebikes csv data is located and where to export outputs
-    filelocation = '/Users/zacharyarmand/Documents/DS5110-blue-bikes/Data/bluebike_trips/Source data/'
-    outputlocation = '/Users/zacharyarmand/Documents/DS5110-blue-bikes/Data/bluebike_trips/'
+    filelocation = '/Users/zacharyarmand/Documents/DS5110/Project/Data/bluebike_trips/Source data/'
+    outputlocation = '/Users/zacharyarmand/Documents/DS5110/Project/Data/bluebike_trips/'
 
     # years of data to parse for
     years_of_data = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022']
@@ -45,7 +53,9 @@ def main():
     for each in years_of_data:
         filename = 'bluebike_trips' + each + '.csv'
         # output to csv
-        create_year_df(each, filelocation).to_csv((outputlocation + filename))
+        full_path = outputlocation + filename
+        create_year_df(each, filelocation).to_csv(full_path, index=False)
+
 
 if __name__ == '__main__':
     main()
