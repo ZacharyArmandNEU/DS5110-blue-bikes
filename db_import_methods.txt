@@ -1,0 +1,75 @@
+cd /Users/zacharyarmand/Documents/DS5110-blue-bikes
+
+sqlite3
+
+.mode csv
+
+create table current_bluebikes_stations (
+   Number TEXT,
+   Name TEXT,
+   Latitude FLOAT,
+   Longitude FLOAT,
+   District TEXT,
+   Public TEXT,
+   Total_docks INTEGER,
+   Deployment_Year INTEGER
+);
+
+
+create table bluebike_trips2022 (
+	tripduration INTEGER,
+	starttime TEXT,
+	stoptime TEXT,
+	start_station_id INTEGER,
+	start_station_name TEXT,
+	start_station_latitude FLOAT,
+	start_station_longitude FLOAT,
+	end_station_id INTEGER,
+	end_station_name TEXT,
+	end_station_latitude FLOAT,
+	end_station_longitude FLOAT,
+	bikeid INTEGER
+);
+
+
+create table bluebike_trips2017 (
+	tripduration INTEGER,
+	starttime TEXT,
+	stoptime TEXT,
+	start_station_id INTEGER,
+	start_station_name TEXT,
+	start_station_latitude FLOAT,
+	start_station_longitude FLOAT,
+	end_station_id INTEGER,
+	end_station_name TEXT,
+	end_station_latitude FLOAT,
+	end_station_longitude FLOAT,
+	bikeid INTEGER
+);
+
+
+create table boston_fatality_report (
+	date_time STRING,
+	mode_type STRING,
+	long FLOAT,
+	lat FLOAT
+);
+
+
+create table boston_crash_reports (
+	dispatch_ts STRING,
+	mode_type STRING,
+	lat FLOAT,
+	long FLOAT
+);
+
+
+.tables
+
+.save blue_bikes.db
+
+.quit
+
+
+
+
