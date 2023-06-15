@@ -31,4 +31,4 @@ venv.bak/
 
 
 # database files - will upload somewhere else (too large)
-*.db
+#*.db
