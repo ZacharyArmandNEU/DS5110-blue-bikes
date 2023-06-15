@@ -2,8 +2,8 @@
 Final project for DS5110-Summer 1 2023. Examining Blue Bikes data
 
 ### Colab Juypiter Notebook
-https://colab.research.google.com/drive/1qFO4eZAgffWXNrwQcNAzyvLOTz7wEEtY?usp=sharing
-
+[https://colab.research.google.com/drive/1qFO4eZAgffWXNrwQcNAzyvLOTz7wEEtY?usp=sharing
+](https://colab.research.google.com/drive/1qFO4eZAgffWXNrwQcNAzyvLOTz7wEEtY?usp=sharing)
 
 ### Database file (download local copy to work with here):
 [https://drive.google.com/file/d/13gERspTDxvXuUNTtXXVTk3Ie9ucDx2eU/view?usp=drive_link
