@@ -2,8 +2,14 @@
 Final project for DS5110-Summer 1 2023. Examining Blue Bikes data
 
 
-Sources: https://www.bluebikes.com/system-data
+### Database file (download local copy to work with here):
+[https://drive.google.com/file/d/13gERspTDxvXuUNTtXXVTk3Ie9ucDx2eU/view?usp=drive_link
+](https://drive.google.com/file/d/13gERspTDxvXuUNTtXXVTk3Ie9ucDx2eU/view?usp=sharing)
 
+
+### Sources
+
+Sources: https://www.bluebikes.com/system-data
 
 data from 2017-2022, maybe just 2017 and 2022 
 
