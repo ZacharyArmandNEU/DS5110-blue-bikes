@@ -27,3 +27,8 @@ venv.bak/
 .idea/
 
 .DS_Store
+
+
+
+# database files - will upload somewhere else (too large)
+.db
