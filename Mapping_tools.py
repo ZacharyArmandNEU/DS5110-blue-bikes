@@ -44,9 +44,7 @@ def create_geodataframe(df, lat_field, long_field):
     # Convert  dataframe into a series of point objects
     points = [Point(xy) for xy in zip(df[long_field], df[lat_field])]
     # Convert that point layer into a geodataframe object
-    geodf = gpd.GeoDataFrame(df,
-                             crs="EPSG:4326",
-                             geometry=points)
+    geodf = gpd.GeoDataFrame(df, crs="EPSG:4326", geometry=points)
     
     return geodf
     
