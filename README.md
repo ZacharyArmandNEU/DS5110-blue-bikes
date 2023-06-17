@@ -1,6 +1,11 @@
 # DS5110-blue-bikes
 Final project for DS5110-Summer 1 2023. Examining Blue Bikes data
 
+## Google doc report -- created haven't added much yet, I will focus on this Monday / Tu
+https://docs.google.com/document/d/1pjgiKT-EDELwUyst7kACo8iuyoYPzWLXOtpDIj0tXaI/edit?usp=sharing
+
+
+
 ### Database file (download local copy to work with here):
 [https://drive.google.com/file/d/13gERspTDxvXuUNTtXXVTk3Ie9ucDx2eU/view?usp=drive_link
 ](https://drive.google.com/file/d/13gERspTDxvXuUNTtXXVTk3Ie9ucDx2eU/view?usp=sharing)
